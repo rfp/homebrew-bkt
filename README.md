@@ -4,10 +4,19 @@ Homebrew tap for [`bkt`](https://github.com/rfp/bkt), a tiny `glab`-style CLI fo
 
 ## Install
 
+Tap this repository:
+
 ```bash
 brew tap rfp/bkt
-brew install bkt
 ```
+
+Install using the fully-qualified formula name:
+
+```bash
+brew install rfp/bkt/bkt
+```
+
+Why the longer command? There is another Homebrew package named `bkt`, so plain `brew install bkt` may install the wrong project.
 
 ## Verify
 
@@ -25,13 +34,13 @@ bkt version 0.1.0
 
 ```bash
 brew update
-brew upgrade bkt
+brew upgrade rfp/bkt/bkt
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall bkt
+brew uninstall rfp/bkt/bkt
 brew untap rfp/bkt
 ```
 
@@ -43,4 +52,4 @@ The formula lives at:
 Formula/bkt.rb
 ```
 
-It currently installs the macOS Apple Silicon release artifact from the main `bkt` repository.
+It installs the macOS Apple Silicon or Intel release artifact from the main `bkt` repository, depending on your Mac architecture.
